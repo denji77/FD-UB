@@ -191,22 +191,22 @@ async def owo(client, inline_query):
         bttn = [
             [
                 InlineKeyboardButton(
-                    text="Command Help", callback_data=f"make_cmd_buttons"
+                    text="Command-Help", callback_data=f"make_cmd_buttons"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="Restart UserBot", callback_data=f"restart_bot"
+                    text="Restart-UserBot", callback_data=f"restart_bot"
                 )
             ],  
             [
              InlineKeyboardButton(
-                    text="Update UserBot", callback_data=f"updTe_bot"
+                    text="Update-UserBot", callback_data=f"updTe_bot"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="SyS Info", callback_data=f"sys_info"
+                    text="Userbot-Info", callback_data=f"sys_info"
                 )
             ],
         ]
@@ -312,22 +312,22 @@ async def black_menu(client, cb):
     bttn = [
             [
                 InlineKeyboardButton(
-                    text="Command Help", callback_data=f"make_cmd_buttons"
+                    text="Command-Help", callback_data=f"make_cmd_buttons"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="Restart UserBot", callback_data=f"restart_bot"
+                    text="Restart-UserBot", callback_data=f"restart_bot"
                 )
             ],  
             [
              InlineKeyboardButton(
-                    text="Update UserBot", callback_data=f"updTe_bot"
+                    text="Update-UserBot", callback_data=f"updTe_bot"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="SyS Info", callback_data=f"sys_info"
+                    text="System-Info", callback_data=f"sys_info"
                 )
             ],
         ]
