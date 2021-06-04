@@ -44,7 +44,7 @@ async def pingy(client, message):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await hmm.edit(
-        f"**█▀█ █▀█ █▄░█ █▀▀ █ \n█▀▀ █▄█ █░▀█ █▄█ ▄**\n➲ `{round(ms)}ms` \n➲ `{uptime}` \n➲ `{mys}`"
+        f"**🏓 Pong!**\n{round(ms)}ms \n ⏱️`{uptime}`"
     )
 
 
@@ -58,15 +58,15 @@ async def amialive(client, message):
     du = psutil.disk_usage(client.workdir)
     disk = f"{humanbytes(du.used)} / {humanbytes(du.total)} " f"({du.percent}%)"
     alive = f"""
-**{me_}'s Friday-UserBot is Alive!**
+**{me_}'s Cutie-UserBot is Alive!**
 
-➔ **Version :** __{friday_version}__
-➔ **Uptime :** __{get_readable_time((time.time() - start_time))}__
-➔ **PyroGram Version :** __{__version__}__
-➔ **Python Version :** __{platform.python_version()}__
-➔ **OS :** __{platform.system()}__
-➔ **CPU :** __{len(psutil.Process().cpu_affinity())}__
-➔ **DISK USAGE :** __{disk}__
+➔ **Version :** __{friday_version}__❤️
+➔ **Uptime :** __{get_readable_time((time.time() - start_time))}__🧡
+➔ **PyroGram Version :** __{__version__}__💛
+➔ **Python Version :** __{platform.python_version()}__💚
+➔ **OS :** __{platform.system()}__💙
+➔ **CPU :** __{len(psutil.Process().cpu_affinity())}__💜
+➔ **DISK USAGE :** __{disk}__🤎
 """
     if message.reply_to_message:
         await client.send_photo(
@@ -126,7 +126,7 @@ async def give_sysinfo(client, message):
     cmd_help={"help": "Restart Your Bot!", "example": "{ch}restart"},
 )
 async def wow_restart(client, message):
-    await edit_or_reply(message, "`🔁 Restarting... 🔁`")
+    await edit_or_reply(message, "`🔁 Restarting... wait 🙃`")
     args = [sys.executable, "-m", "main_startup"]
     execle(sys.executable, *args, environ)
     exit()
