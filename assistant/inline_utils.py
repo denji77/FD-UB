@@ -191,28 +191,28 @@ async def owo(client, inline_query):
         bttn = [
             [
                 InlineKeyboardButton(
-                    text="Command-Help", callback_data=f"make_cmd_buttons"
+                    text="Command - Help", callback_data=f"make_cmd_buttons"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="Restart-UserBot", callback_data=f"restart_bot"
+                    text="Restart - UserBot", callback_data=f"restart_bot"
                 )
             ],  
             [
              InlineKeyboardButton(
-                    text="Update-UserBot", callback_data=f"updTe_bot"
+                    text="Update - UserBot", callback_data=f"updTe_bot"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="Userbot-Info", callback_data=f"sys_info"
+                    text="Userbot - Info", callback_data=f"sys_info"
                 )
             ],
         ]
         if Config.LOAD_UNOFFICIAL_PLUGINS:
             total_ = len(XTRA_CMD_LIST) + len(CMD_LIST)
-        nice_text = f"**FridayUserBot Commands** \n**Friday Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{total_}__"
+        nice_text = f"**UserBot Commands** \n**Userbot Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{total_}__"
         await client.answer_inline_query(
             inline_query.id,
             cache_time=0,
@@ -312,22 +312,22 @@ async def black_menu(client, cb):
     bttn = [
             [
                 InlineKeyboardButton(
-                    text="Command-Help", callback_data=f"make_cmd_buttons"
+                    text="Command - Help", callback_data=f"make_cmd_buttons"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="Restart-UserBot", callback_data=f"restart_bot"
+                    text="Restart - UserBot", callback_data=f"restart_bot"
                 )
             ],  
             [
              InlineKeyboardButton(
-                    text="Update-UserBot", callback_data=f"updTe_bot"
+                    text="Update - UserBot", callback_data=f"updTe_bot"
                 )
             ],
             [
              InlineKeyboardButton(
-                    text="System-Info", callback_data=f"sys_info"
+                    text="System - Info", callback_data=f"sys_info"
                 )
             ],
         ]
@@ -384,7 +384,7 @@ async def roaststart(client, cb):
                 )
             ]
     ]
-    await cb.edit_message_text("`Please Wait, Restarting... This May Take A While`", reply_markup=InlineKeyboardMarkup(bttn))
+    await cb.edit_message_text("`Please Wait, Restarting Userbot... This May Takes some time.`", reply_markup=InlineKeyboardMarkup(bttn))
     args = [sys.executable, "-m", "main_startup"]
     execle(sys.executable, *args, environ)
     exit()
@@ -529,7 +529,7 @@ async def get_back_vro(client, cb):
         is_official = False
     cmd_list = CMD_LIST if is_official else XTRA_CMD_LIST
     buttons = paginate_help(page_number, cmd_list, "helpme", is_official=is_official)
-    nice_text = f"**FridayUserBot Commands & Help Menu!** \n\n**Friday Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{len(CMD_LIST)}__"
+    nice_text = f"**UserBot Commands & Help Menu!** \n\n**Userbot Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{len(CMD_LIST)}__"
     await cb.edit_message_text(nice_text, reply_markup=InlineKeyboardMarkup(buttons))
 
 
@@ -541,15 +541,15 @@ async def give_plugin_cmds(client, cb):
     if cb.matches[0].group(2) == "False":
         is_official = False
     cmd_list = CMD_LIST if is_official else XTRA_CMD_LIST
-    help_string = f"**💡 PLUGIN NAME 💡 :** `{plugin_name}` \n{cmd_list[plugin_name]}"
-    help_string += "\n\n**(C) @FRIDAYOT** ".format(plugin_name)
+    help_string = f"**🎀 PLUGIN NAME 🎀 :** `{plugin_name}` \n{cmd_list[plugin_name]}"
+    help_string += "\n\n**(C) @MR_STEPH3N 🎃** ".format(plugin_name)
     await cb.edit_message_text(
         help_string,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="Go Back",
+                        text="Move - Back",
                         callback_data=f"backme_{page_number}_{is_official}",
                     )
                 ]
