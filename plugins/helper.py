@@ -21,7 +21,7 @@ from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
     },
 )
 async def help(client, message):
-    f_ = await edit_or_reply(message, "`Please Wait!`")
+    f_ = await edit_or_reply(message, "Just a minute 👨‍🦯. Bringing help menu 🎭")
     if bot:
         starkbot = bot.me
         bot_username = starkbot.username
