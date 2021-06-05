@@ -33,7 +33,7 @@ async def update_it(client, message):
         repo = Repo()
     except GitCommandError:
         return await msg_.edit(
-            "`Invalid Git Command. Please Report This Bug To @FridayOT`"
+            "`Invalid Git Command.Soory 😴`"
         )
     except InvalidGitRepositoryError:
         repo = Repo.init()
