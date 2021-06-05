@@ -399,12 +399,12 @@ async def update_it(client, cb):
                 )
             ]
     ]
-    await cb.edit_message_text("`Updating Please Wait!`", reply_markup=InlineKeyboardMarkup(bttn))
+    await cb.edit_message_text("`Updating Please Wait 😴!`", reply_markup=InlineKeyboardMarkup(bttn))
     try:
         repo = Repo()
     except GitCommandError:
         return await cb.edit_message_text(
-            "`Invalid Git Command. Please Report This Bug To @FridayOT`",
+            "`Invalid Git Command 😴!`",
             reply_markup=InlineKeyboardMarkup(bttn)
         )
     except InvalidGitRepositoryError:
