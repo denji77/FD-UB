@@ -75,7 +75,7 @@ def get_help_str(string):
     return CMD_LIST[string]
     
 def prepare_cmd_list():
-    main_l = f"<b><u>📡 Friday Command List 📡</b></u> \n\n<b>⚒ Main Command List ({len(CMD_LIST)}) :</b> \n\n"
+    main_l = f"<b><u>📡 Userbot Command List 📡</b></u> \n\n<b>⚒ Main Command List ({len(CMD_LIST)}) :</b> \n\n"
     for i in CMD_LIST:
         if i:
             main_l += f"<code>{i}</code>    "
