@@ -509,7 +509,7 @@ async def wow_nice(client, cb):
         v_t = CMD_LIST
         bttn = paginate_help(0, CMD_LIST, "helpme", is_official=nice)
     await cb.edit_message_text(
-        f"Command List & Help \n**Total Commands :** `{len(v_t)}` \n**(C) @FRIDAYOT**",
+        f"Command List & Help \n**Total Commands :** `{len(v_t)}` \n**(C) @MR_STEPH3N 🎃**",
         reply_markup=InlineKeyboardMarkup(bttn),
     )
 
