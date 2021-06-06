@@ -203,7 +203,7 @@ async def owo(client, inline_query):
              InlineKeyboardButton(
                      text="Creator",url="t.me/mr_steph3n"),
              InlineKeyboardButton(
-                     text="Inline",url="t.me/stephenUbot"),
+                     text="Assistant",url="t.me/stephenUbot"),
             ],
             [
              InlineKeyboardButton(
@@ -215,6 +215,12 @@ async def owo(client, inline_query):
                     text="Userbot - Info", callback_data=f"sys_info"
                 )
             ], 
+            [
+             InlineKeyboardButton(
+                     text="Source",url="https://github.com/Mr-SHRLCK/FD-UB"),
+             InlineKeyboardButton(
+                     text="Support",url="t.me/telegram"),
+            ],
         ]
         if Config.LOAD_UNOFFICIAL_PLUGINS:
             total_ = len(XTRA_CMD_LIST) + len(CMD_LIST)
@@ -341,6 +347,12 @@ async def black_menu(client, cb):
              InlineKeyboardButton(
                     text="System - Info", callback_data=f"sys_info"
                 )
+            ],
+            [
+             InlineKeyboardButton(
+                     text="Source",url="https://github.com/Mr-SHRLCK/FD-UB"),
+             InlineKeyboardButton(
+                     text="Support",url="t.me/telegram"),
             ],
         ]
     if Config.LOAD_UNOFFICIAL_PLUGINS:
