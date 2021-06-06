@@ -226,7 +226,7 @@ def inline_wrapper(func):
                         InlineQueryResultArticle(
                             title="Sorry, Friend You Can't Use Me!",
                             input_message_content=InputTextMessageContent(
-                                "**Hai!** Well, I am Not For You, I Only Work For My Master. Why Don't You Deploy Your Own @FridayOT ?"
+                                "**Hai!**ഇവനെ ഇന്നു ഞാൻ🥴"
                             ),
                         )
                     )
