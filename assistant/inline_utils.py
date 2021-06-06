@@ -324,29 +324,21 @@ async def black_menu(client, cb):
     bttn = [
             [
                 InlineKeyboardButton(
-                    text="Command - Help", callback_data=f"make_cmd_buttons"
-                )
+                    text="Command - Help", callback_data=f"make_cmd_buttons"),
+                InlineKeyboardButton(
+                    text="Restart - Userbot", callback_data=f"restart_bot),
             ],
             [
-             InlineKeyboardButton(
-                    text="Restart - UserBot", callback_data=f"restart_bot"
-                )
-            ],  
-            [
-             InlineKeyboardButton(
+                InlineKeyboardButton(
                      text="Creator",url="t.me/mr_steph3n"),
-             InlineKeyboardButton(
+                InlineKeyboardButton(
                      text="Inline",url="t.me/stephenUbot"),
             ],
             [
-             InlineKeyboardButton(
-                    text="Update - UserBot", callback_data=f"updTe_bot"
-                )
-            ],
-            [
-             InlineKeyboardButton(
-                    text="System - Info", callback_data=f"sys_info"
-                )
+               InlineKeyboardButton(
+                    text="Update - UserBot", callback_data=f"updTe_bot"),
+               InlineKeyboardButton(
+                    text="System - info", callback_data=f"sys_info"),
             ],
             [
              InlineKeyboardButton(
