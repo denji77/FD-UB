@@ -211,7 +211,8 @@ async def owo(client, inline_query):
             ],
             [
              InlineKeyboardButton(
-                     text="Creator",url
+                     text="Creator",url="t.me/mr_steph3n"
+                )
         ]
         if Config.LOAD_UNOFFICIAL_PLUGINS:
             total_ = len(XTRA_CMD_LIST) + len(CMD_LIST)
