@@ -209,6 +209,9 @@ async def owo(client, inline_query):
                     text="Userbot - Info", callback_data=f"sys_info"
                 )
             ],
+            [
+             InlineKeyboardButton(
+                     text="Creator",url
         ]
         if Config.LOAD_UNOFFICIAL_PLUGINS:
             total_ = len(XTRA_CMD_LIST) + len(CMD_LIST)
