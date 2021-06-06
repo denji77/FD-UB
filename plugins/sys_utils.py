@@ -67,9 +67,7 @@ async def amialive(client, message):
 ➔ **OS :** __{platform.system()}__💙
 ➔ **CPU :** __{len(psutil.Process().cpu_affinity())}__💜
 ➔ **DISK USAGE :** __{disk}__🤎
-➔ **UPTIME :**__{uptime}__🖤
-
-             """
+"""
     if message.reply_to_message:
         await client.send_photo(
             message.chat.id,
