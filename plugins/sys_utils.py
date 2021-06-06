@@ -44,7 +44,7 @@ async def pingy(client, message):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await hmm.edit(
-        f"**__☞ Pong!__**\n**➥** {round(ms)} \n**➥** {uptime}"
+        f"**__☞ Pong!__**\n**➥** **__{round(ms)}__** \n**➥** **__{uptime}__**"
     )
 
 
@@ -67,6 +67,8 @@ async def amialive(client, message):
 ➔ **OS :** __{platform.system()}__💙
 ➔ **CPU :** __{len(psutil.Process().cpu_affinity())}__💜
 ➔ **DISK USAGE :** __{disk}__🤎
+➔ **UPTIME :**__{uptime}__🖤
+➔ **CREATOR :** [STEPHEN](t.me/mr_steph3n) 🤍
 """
     if message.reply_to_message:
         await client.send_photo(
