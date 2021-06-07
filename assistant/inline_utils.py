@@ -209,6 +209,13 @@ async def owo(client, inline_query):
                     text="SyS Info", callback_data=f"sys_info"
                 )
             ],
+            [ 
+             InlineKeyboardButton(
+                    text="Assistant",url="t.me/stephenUbot"),
+             InlineKeyboardButton(
+                    text="Source-Code",url="https://github.com/Mr-SHRLCK/FD-UB),
+            
+            ],
         ]
         if Config.LOAD_UNOFFICIAL_PLUGINS:
             total_ = len(XTRA_CMD_LIST) + len(CMD_LIST)
