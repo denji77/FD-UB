@@ -213,7 +213,7 @@ async def owo(client, inline_query):
              InlineKeyboardButton(
                     text="Assistant",url="t.me/stephenUbot"),
              InlineKeyboardButton(
-                    text="Source-Code",url="https://github.com/Mr-SHRLCK/FD-UB),
+                    text="Source-Code",url="https://github.com/mr-shrlck/fd-ub),
             
             ],
         ]
