@@ -323,10 +323,10 @@ async def black_menu(client, cb):
     total_ = len(CMD_LIST)
     bttn = [
         [
-                InlineKeyboardButton(
-                    text="Command - Help", callback_data=f"make_cmd_buttons"),
-                InlineKeyboardButton(
-                    text="Restart - Userbot", callback_data=f"restart_bot),
+             InlineKeyboardButton(
+                   text="Command - Help", callback_data=f"make_cmd_buttons"),
+             InlineKeyboardButton(
+                   text="Restart - Userbot", callback_data=f"restart_bot),
             ],
             [
              InlineKeyboardButton(
