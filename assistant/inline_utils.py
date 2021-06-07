@@ -346,12 +346,9 @@ async def black_menu(client, cb):
             ],
             [
              InlineKeyboardButton(
-                   text="Source",url="https://github.com/Mr-SHRLCK/FD-UB"
-                )
-            ],
+                   text="Source",url="https://github.com/Mr-SHRLCK/FD-UB"),
              InlineKeyboardButton(
-                   text="Support",url="t.me/telegram"
-                )
+                   text="Support",url="t.me/telegram"),
             ],
         ]
     if Config.LOAD_UNOFFICIAL_PLUGINS:
