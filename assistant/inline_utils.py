@@ -326,7 +326,7 @@ async def black_menu(client, cb):
              InlineKeyboardButton(
                    text="Command - Help", callback_data=f"make_cmd_buttons"),
              InlineKeyboardButton(
-                   text="Restart - Userbot", callback_data=f"restart_bot),
+                   text="Restart - Userbot", callback_data=f"restart_bot"),
             ],
             [
              InlineKeyboardButton(
