@@ -344,12 +344,6 @@ async def black_menu(client, cb):
                    text="System - info", callback_data=f"sys_info"
                 )
             ],
-            [
-             InlineKeyboardButton(
-                   text="Source",url="https://github.com/Mr-SHRLCK/FD-UB"),
-             InlineKeyboardButton(
-                   text="Support",url="t.me/telegram"),
-            ],
         ]
     if Config.LOAD_UNOFFICIAL_PLUGINS:
         total_ = len(XTRA_CMD_LIST) + len(CMD_LIST)
